@@ -1,0 +1,20 @@
+
+.container{
+    display: flex;
+    width: 500px;
+    border: dashed;
+    /* align-items: baseline; */
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+}
+
+.box{
+    background-color: aquamarine;
+    border:solid pink;
+}
+
+.box:nth-child(2){
+    font-size: 50px;
+    
+}
