@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Service Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Feedback Survey Form</h1>
+      <form id="survey-form" action="https://www.bilibili.com/">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <lable for="email">Email:</lable>
+        <input type="text" id="email" name="email" required />
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required />
+
+        <label for="Feedback-type">Type of Feedback</label>
+        <select id="Feedback-type" name="Feedback-type">
+          <option value="positive">Positive</option>
+          <option value="negative">Negative</option>
+          <option value="suggestion">Suggestion</option>
+        </select>
+
+        <fieldset>
+          <legend>Services Used:</legend>
+
+          <input
+            type="checkbox"
+            id="service1"
+            name="services"
+            value="service1"
+          />
+          <label for="services1">Service 1</label><br />
+
+          <input
+            type="checkbox"
+            id="service2"
+            name="services"
+            value="service2"
+          />
+          <label for="services2">Service 2</label><br />
+
+          <input
+            type="checkbox"
+            id="service3"
+            name="services"
+            value="service3"
+          />
+          <label for="services2">Service 3</label><br />
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
